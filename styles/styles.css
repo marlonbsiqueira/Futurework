@@ -1,0 +1,208 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(7, 14, 28, 0.82);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+header.scrolled {
+    background: rgba(7, 14, 28, 0.94);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
+    border-color: rgba(255, 255, 255, 0.10);
+}
+
+#navbar {
+    width: min(100%, 1280px);
+    margin: 0 auto;
+    padding: 16px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.logo-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.logo-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(65, 89, 255, 0.18);
+    border-color: rgba(85, 104, 255, 0.30);
+}
+
+#nav_logo {
+    font-size: 1.25rem;
+    color: #ffffff;
+}
+
+#nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: 6px;
+}
+
+.nav-item a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.82);
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1;
+    padding: 10px 0;
+    transition: color 0.25s ease;
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #7a8cff, #ffffff);
+    transition: width 0.25s ease;
+}
+
+.nav-item a:hover::after,
+#nav_list a.active::after,
+#mobile_nav_list a.active::after {
+    width: 100%;
+}
+
+.nav-item a:hover,
+#nav_list a.active,
+#mobile_nav_list a.active {
+    color: #ffffff;
+}
+
+.nav-cta {
+    min-width: 182px;
+    font-size: 0.95rem;
+}
+
+#mobile_btn {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+#mobile_btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 18px rgba(65, 89, 255, 0.16);
+    border-color: rgba(122, 140, 255, 0.30);
+}
+
+#mobile_menu {
+    width: min(100%, 1280px);
+    margin: 0 auto;
+    padding: 0 8%;
+    overflow: hidden;
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height 0.35s ease, padding-bottom 0.35s ease, visibility 0.35s ease;
+}
+
+#mobile_menu.active {
+    max-height: 420px;
+    padding-bottom: 18px;
+    visibility: visible;
+}
+
+#mobile_nav_list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 0 18px;
+    margin-top: 4px;
+    background: rgba(13, 22, 42, 0.96);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20);
+}
+
+#mobile_nav_list .nav-item {
+    padding: 0 18px;
+}
+
+#mobile_nav_list .nav-item a {
+    display: inline-flex;
+    width: 100%;
+    padding: 12px 0;
+}
+
+@media (max-width: 1240px) {
+    #navbar {
+        padding: 16px 6%;
+    }
+
+    #mobile_menu {
+        padding: 0 6%;
+    }
+
+    #nav_list {
+        gap: 18px;
+    }
+
+    .nav-item a {
+        font-size: 0.92rem;
+    }
+}
+
+@media (max-width: 1170px) {
+    #nav_list,
+    #navbar .nav-cta {
+        display: none;
+    }
+
+    #mobile_btn {
+        display: inline-flex;
+    }
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        padding: 14px 5%;
+    }
+
+    #mobile_menu {
+        padding: 0 5%;
+    }
+
+    .logo-link {
+        width: 46px;
+        height: 46px;
+    }
+}
