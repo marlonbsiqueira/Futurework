@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const allNavLinks = document.querySelectorAll("#nav_list a, #mobile_nav_list a");
     const sections = document.querySelectorAll("main section[id]");
     const revealElements = document.querySelectorAll(".reveal");
+    const allImages = document.querySelectorAll("img");
 
     const toggleMobileMenu = () => {
         if (!mobileMenu || !mobileBtn) return;
@@ -117,6 +118,13 @@ document.addEventListener("DOMContentLoaded", () => {
         if (event.key === "Escape" && mobileMenu && mobileMenu.classList.contains("active")) {
             closeMobileMenu();
         }
+    });
+
+    allImages.forEach(img => {
+        img.addEventListener("error", () => {
+            img.style.opacity = "0";
+            img.setAttribute("aria-hidden", "true");
+        });
     });
 
     updateHeaderState();
