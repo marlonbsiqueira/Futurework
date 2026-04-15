@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="MBS Advisory is a specialist consulting firm helping CEOs and CFOs across Europe grow revenue, transform financial operations, and build execution-ready organisations. Book a complimentary 30-minute diagnostic.">
+    <meta name="keywords" content="Executive Consulting, Revenue Growth, Finance Transformation, Sales Advisory, Intelligent Automation, Process Redesign, Governance, Executive Dashboards, Power BI, SAP S/4HANA, Lean Six Sigma, Portugal, Europe, MBS Advisory">
+    <meta name="author" content="MBS Advisory">
+
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="MBS Advisory | Specialist Consulting Firm · Revenue · Finance · Transformation">
+    <meta property="og:description" content="MBS Advisory partners with senior leadership teams across Europe to drive revenue growth, transform financial operations, and build the execution discipline that high-performing organisations depend on.">
+    <meta property="og:image"       content="./images/og-cover.jpg">
+    <meta property="og:url"         content="https://mbsadvisory.com">
+    <meta name="twitter:card"       content="summary_large_image">
+    <meta name="twitter:title"      content="MBS Advisory | Revenue · Finance · Transformation Consulting">
+    <meta name="twitter:description" content="Specialist consulting firm partnering with CEOs and CFOs to grow revenue, transform finance, and build execution-ready organisations. Europe & the Americas.">
+    <meta name="twitter:image"      content="./images/og-cover.jpg">
+
+    <title>MBS Advisory | Specialist Consulting · Revenue · Finance · Transformation</title>
+
+    <!-- Fonts: Fraunces (display), Plus Jakarta Sans (body) — properly loaded -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,300;1,9..144,400;1,9..144,600;1,9..144,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <meta name="google-site-verification" content="FbOtLDEPnFqXokpT85q3Lr8juwd14maTz7eZwRSfOSs" />
+</head>
+<body>
+
+    <div class="site-bg" aria-hidden="true">
+        <span class="bg-orb orb-1"></span>
+        <span class="bg-orb orb-2"></span>
+        <span class="bg-orb orb-3"></span>
+        <span class="bg-grid"></span>
+        <span class="bg-noise"></span>
+    </div>
+
+    <!-- ═══════════ HEADER ═══════════ -->
+    <header id="header">
+        <nav id="navbar" aria-label="Main navigation">
+            <a href="#home" class="brand" aria-label="MBS Advisory — go to homepage">
+                <span class="brand-mark" aria-hidden="true">
+                    <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="bG" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#93b4ff"/>
+                                <stop offset="100%" stop-color="#ffffff"/>
+                            </linearGradient>
+                        </defs>
+                        <rect x="8" y="8" width="48" height="48" rx="14" fill="url(#bG)" opacity="0.15"/>
+                        <path d="M20 40V24h4l8 9 8-9h4v16h-4V30.7l-8 8.7-8-8.7V40z" fill="url(#bG)"/>
+                    </svg>
+                </span>
+                <span class="brand-text">
+                    <strong>MBS Advisory</strong>
+                    <small data-i18n="brand_subtitle">Consulting · Revenue · Transformation</small>
+                </span>
+            </a>
+
+            <ul id="nav_list">
+                <li class="nav-item"><a href="#home"       data-i18n="nav_home">Home</a></li>
+                <li class="nav-item"><a href="#results"    data-i18n="nav_results">Results</a></li>
+                <li class="nav-item"><a href="#expertise"  data-i18n="nav_expertise">Expertise</a></li>
+                <li class="nav-item"><a href="#diagnostic" data-i18n="nav_diagnostic">Diagnostic</a></li>
+                <li class="nav-item"><a href="#approach"   data-i18n="nav_approach">Approach</a></li>
+                <li class="nav-item"><a href="#contact"    data-i18n="nav_contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="language-switcher" aria-label="Language selector">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="pt">PT</button>
+                </div>
+                <button type="button" id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="theme-icon"></i>
+                </button>
+                <a href="#contact" class="btn-primary nav-cta" data-i18n="nav_cta">Book a Discovery Call</a>
+            </div>
+
+            <button id="mobile_btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile_menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu" aria-label="Mobile navigation">
+            <ul id="mobile_nav_list">
+                <li class="nav-item"><a href="#home"       data-i18n="nav_home">Home</a></li>
+                <li class="nav-item"><a href="#results"    data-i18n="nav_results">Results</a></li>
+                <li class="nav-item"><a href="#expertise"  data-i18n="nav_expertise">Expertise</a></li>
+                <li class="nav-item"><a href="#diagnostic" data-i18n="nav_diagnostic">Diagnostic</a></li>
+                <li class="nav-item"><a href="#approach"   data-i18n="nav_approach">Approach</a></li>
+                <li class="nav-item"><a href="#contact"    data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="mobile-controls">
+                <div class="language-switcher">
+                    <button type="button" class="lang-btn active" data-lang="en">EN</button>
+                    <button type="button" class="lang-btn" data-lang="pt">PT</button>
+                </div>
+                <button type="button" id="theme-toggle-mobile" class="theme-btn" aria-label="Toggle dark mode">
+                    <i class="fa-solid fa-moon" id="theme-icon-mobile"></i>
+                </button>
+            </div>
+            <a href="#contact" class="btn-primary mobile-cta" data-i18n="nav_cta">Book a Discovery Call</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ═══════════ HERO ═══════════ -->
+        <section id="home">
+            <div id="cta" class="reveal left">
+                <span class="eyebrow">
+                    <span class="eyebrow-dot"></span>
+                    <span data-i18n="hero_eyebrow">Specialist Consulting Firm · Europe &amp; the Americas</span>
+                </span>
+
+                <h1 class="title" data-i18n="hero_title">
+                    Growth stalls when execution falls short. We build the engine that keeps it running.
+                </h1>
+
+                <p class="description" data-i18n="hero_description">
+                    MBS Advisory is a specialist consulting firm partnering with CEOs, CFOs, and senior leadership teams to drive revenue growth, transform financial operations, and build the execution infrastructure that high-performing organisations depend on.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary" data-i18n="hero_btn_primary">Book a Discovery Call</a>
+                    <a href="#expertise" class="btn-ghost">
+                        <span data-i18n="hero_btn_secondary">See Our Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon"><i class="fa-solid fa-chart-line"></i></span>
+                        <div>
+                            <strong data-i18n="trust_1_title">Revenue-Led</strong>
+                            <span data-i18n="trust_1_text">Commercial strategy aligned to growth targets, not activity metrics</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <div>
+                            <strong data-i18n="trust_2_title">Finance &amp; Ops</strong>
+                            <span data-i18n="trust_2_text">End-to-end visibility across your numbers and processes</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon"><i class="fa-solid fa-bolt"></i></span>
+                        <div>
+                            <strong data-i18n="trust_3_title">Real Execution</strong>
+                            <span data-i18n="trust_3_text">We build and implement — not just advise and leave</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="banner" class="reveal right">
+                <div class="hero-visual-frame">
+                    <video autoplay muted loop playsinline class="hero-video" poster="./images/menu.png">
+                        <source src="./videos/hero-video.mp4" type="video/mp4">
+                        <img src="./images/menu.png" alt="MBS Advisory executive consulting" loading="eager">
+                    </video>
+                </div>
+
+                <div class="hero-floating-card card-top">
+                    <span class="fc-icon"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                    <div>
+                        <span data-i18n="floating_1_label">Sales &amp; Revenue Advisory</span>
+                        <strong data-i18n="floating_1_text">Structured growth, not guesswork</strong>
+                    </div>
+                </div>
+
+                <div class="hero-floating-card card-bottom">
+                    <span class="fc-icon"><i class="fa-solid fa-chart-column"></i></span>
+                    <div>
+                        <span data-i18n="floating_2_label">Automation &amp; Real-Time Dashboards</span>
+                        <strong data-i18n="floating_2_text">Your business, visible in minutes</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ TRUST BAR ═══════════ -->
+        <div class="trust-bar reveal">
+            <div class="trust-bar-inner">
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_1">Revenue Growth</span></span>
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_2">Finance Transformation</span></span>
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_3">Executive Advisory</span></span>
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_4">Intelligent Automation</span></span>
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_5">Real-Time Dashboards</span></span>
+                <span><i class="fa-solid fa-circle-dot"></i> <span data-i18n="bar_6">Operational Excellence</span></span>
+            </div>
+        </div>
+
+        <!-- ═══════════ RESULTS / METRICS ═══════════ -->
+        <section id="results">
+            <div class="section-heading reveal">
+                <span class="section-tag" data-i18n="results_tag">PROVEN RESULTS</span>
+                <h2 class="section-title" data-i18n="results_title">The numbers behind our engagements</h2>
+                <p class="section-description" data-i18n="results_subtitle">Quantified outcomes from client engagements across Europe and the Americas, delivered by our specialist team.</p>
+            </div>
+
+            <!-- Animated metrics row -->
+            <div class="metrics-row">
+                <div class="metric-block reveal">
+                    <span class="metric-value" data-target="40" data-suffix="%" data-prefix="–">0</span>
+                    <span class="metric-label" data-i18n="metric_1">Reduction in reporting cycle time</span>
+                    <span class="metric-context" data-i18n="metric_1_ctx">Finance transformation · Automotive sector · EU</span>
+                </div>
+                <div class="metric-block reveal">
+                    <span class="metric-value" data-target="4000" data-suffix="+" data-prefix="">0</span>
+                    <span class="metric-label" data-i18n="metric_2">Hours saved annually through automation</span>
+                    <span class="metric-context" data-i18n="metric_2_ctx">RPA deployment · Multi-entity European operations</span>
+                </div>
+                <div class="metric-block reveal">
+                    <span class="metric-value" data-target="30" data-suffix="+" data-prefix="">0</span>
+                    <span class="metric-label" data-i18n="metric_3">European jurisdictions managed compliantly</span>
+                    <span class="metric-context" data-i18n="metric_3_ctx">VAT &amp; tax compliance · Zero material audit findings</span>
+                </div>
+                <div class="metric-block reveal">
+                    <span class="metric-value" data-target="70" data-suffix="+" data-prefix="">0</span>
+                    <span class="metric-label" data-i18n="metric_4">Senior leaders receiving real-time dashboards</span>
+                    <span class="metric-context" data-i18n="metric_4_ctx">Power BI deployment · Replaced manual reporting cycles</span>
+                </div>
+            </div>
+
+            <!-- Case snapshots -->
+            <div class="cases-grid">
+                <article class="case-card reveal left">
+                    <div class="case-tag-row">
+                        <span class="case-sector" data-i18n="case_1_sector">Finance Transformation · Automotive · European SSC</span>
+                    </div>
+                    <h3 data-i18n="case_1_title">From 3-day manual reporting cycles to real-time executive intelligence</h3>
+                    <div class="case-body">
+                        <div class="case-col">
+                            <span class="case-label" data-i18n="case_before">Before</span>
+                            <p data-i18n="case_1_before">Finance teams across multiple European entities spending 3+ days per month manually compiling reports — no consistent format, no real-time visibility, and no remaining capacity for analysis.</p>
+                        </div>
+                        <div class="case-col case-after">
+                            <span class="case-label" data-i18n="case_after">After</span>
+                            <p data-i18n="case_1_after">MBS Advisory designed and deployed automated Power BI dashboards across all entities. Weekly performance data now reaches 70+ senior leaders in minutes — zero manual compilation required.</p>
+                        </div>
+                    </div>
+                    <div class="case-result">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span data-i18n="case_1_result">~40% reduction in reporting cycle · 70+ leaders served weekly · Entire manual process eliminated</span>
+                    </div>
+                </article>
+
+                <article class="case-card reveal">
+                    <div class="case-tag-row">
+                        <span class="case-sector" data-i18n="case_2_sector">Intelligent Automation · Finance Operations · 15+ Entities</span>
+                    </div>
+                    <h3 data-i18n="case_2_title">4,000+ hours of manual finance work eliminated in a single programme</h3>
+                    <div class="case-body">
+                        <div class="case-col">
+                            <span class="case-label" data-i18n="case_before">Before</span>
+                            <p data-i18n="case_2_before">Core finance processes — R2R, P2P, and OTC — reliant on manual data entry, reconciliations, and cross-system transfers. Analyst capacity consumed entirely by low-value tasks with no strategic output.</p>
+                        </div>
+                        <div class="case-col case-after">
+                            <span class="case-label" data-i18n="case_after">After</span>
+                            <p data-i18n="case_2_after">Our team architected and deployed RPA bots and Power Automate flows across the highest-volume processes, fully integrated with SAP S/4HANA — with complete audit trail and governance controls throughout.</p>
+                        </div>
+                    </div>
+                    <div class="case-result">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span data-i18n="case_2_result">4,000+ hours recaptured annually · Teams redeployed to high-value analysis · Full audit compliance maintained</span>
+                    </div>
+                </article>
+
+                <article class="case-card reveal right">
+                    <div class="case-tag-row">
+                        <span class="case-sector" data-i18n="case_3_sector">VAT &amp; Tax Compliance · 30+ European Jurisdictions</span>
+                    </div>
+                    <h3 data-i18n="case_3_title">Audit-ready tax compliance at scale — zero material findings</h3>
+                    <div class="case-body">
+                        <div class="case-col">
+                            <span class="case-label" data-i18n="case_before">Before</span>
+                            <p data-i18n="case_3_before">Multinational VAT compliance managed manually across 30+ EU jurisdictions — inconsistent validation logic, high error exposure, and slow response times when audit queries arose.</p>
+                        </div>
+                        <div class="case-col case-after">
+                            <span class="case-label" data-i18n="case_after">After</span>
+                            <p data-i18n="case_3_after">MBS Advisory built jurisdiction-specific automated validation tools and applied Lean Six Sigma methodology to submission accuracy. Full audit documentation standardised and maintained across all entities.</p>
+                        </div>
+                    </div>
+                    <div class="case-result">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span data-i18n="case_3_result">Zero material audit findings across all jurisdictions · Significant reduction in compliance review time</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ═══════════ EXPERTISE ═══════════ -->
+        <section id="expertise">
+            <div class="section-heading reveal">
+                <span class="section-tag" data-i18n="expertise_tag">PRACTICE AREAS</span>
+                <h2 class="section-title" data-i18n="expertise_title">Six areas where MBS Advisory delivers measurable impact for your business</h2>
+                <p class="section-description" data-i18n="expertise_description">We bring a team of specialists — not generalists — to each engagement, delivering cross-functional transformation that combines commercial strategy, financial intelligence, and operational execution.</p>
+            </div>
+
+            <div class="cards-grid">
+                <article class="card image-card reveal left">
+                    <div class="card-media">
+                        <img src="./images/Sales.png" alt="Sales and revenue performance consulting" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 data-i18n="expertise_card_1_title">Sales &amp; Revenue Growth</h3>
+                        <p data-i18n="expertise_card_1_text">Build the commercial discipline, pipeline visibility, and decision frameworks that convert strategy into consistent revenue. We redesign how your team sells, tracks, and wins.</p>
+                    </div>
+                </article>
+
+                <article class="card image-card reveal">
+                    <div class="card-media">
+                        <img src="./images/Automation1.png" alt="Business automation consulting" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3 data-i18n="expertise_card_2_title">Intelligent Automation</h3>
+                        <p data-i18n="expertise_card_2_text">Recapture thousands of hours from manual, low-value work. We design and deploy automation solutions that scale, integrate with your systems, and deliver immediate ROI.</p>
+                    </div>
+                </article>
+
+                <article class="card image-card reveal right">
+                    <div class="card-media">
+                        <img src="./images/Dashboards.jpg" alt="Executive dashboards and analytics" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-chart-column"></i></div>
+                        <h3 data-i18n="expertise_card_3_title">Executive Dashboards &amp; Analytics</h3>
+                        <p data-i18n="expertise_card_3_text">Give your leadership team real-time visibility over the metrics that matter. We build high-impact dashboards that replace report compilation and accelerate decisions.</p>
+                    </div>
+                </article>
+
+                <article class="card image-card reveal left">
+                    <div class="card-media">
+                        <img src="./images/ProcessRedesign.png" alt="Process redesign consulting" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+                        <h3 data-i18n="expertise_card_4_title">Process Redesign &amp; Lean</h3>
+                        <p data-i18n="expertise_card_4_text">Identify where your operations lose time, money, and quality — then redesign them. We apply Lean Six Sigma methodology to produce durable, measurable process improvements.</p>
+                    </div>
+                </article>
+
+                <article class="card image-card reveal">
+                    <div class="card-media">
+                        <img src="./images/Governance.png" alt="Governance and control consulting" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 data-i18n="expertise_card_5_title">Governance &amp; Internal Controls</h3>
+                        <p data-i18n="expertise_card_5_text">Define clear ownership, accountability, and reporting structures that make your organisation faster, more transparent, and audit-ready at every level.</p>
+                    </div>
+                </article>
+
+                <article class="card image-card reveal right">
+                    <div class="card-media">
+                        <img src="./images/Transformation1.png" alt="Transformation execution consulting" loading="lazy" width="600" height="210">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3 data-i18n="expertise_card_6_title">Transformation Programme Management</h3>
+                        <p data-i18n="expertise_card_6_text">Complex change requires experienced leadership. We manage the full transformation lifecycle — from diagnosis to adoption — keeping stakeholders aligned and results on track.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ═══════════ BUSINESS DIAGNOSTIC ═══════════ -->
+        <section id="diagnostic">
+            <div class="section-heading reveal">
+                <span class="section-tag" data-i18n="diagnostic_tag">BUSINESS DIAGNOSTIC</span>
+                <h2 class="section-title" data-i18n="diagnostic_title">Which challenge is limiting your organisation right now?</h2>
+                <p class="section-description" data-i18n="diagnostic_description">Select the area where you want greater impact. Our team will show you exactly how MBS Advisory would address it — with proven frameworks and real results.</p>
+            </div>
+
+            <div class="diagnostic-shell">
+                <div class="diagnostic-tabs" role="tablist" aria-label="Business area selector">
+                    <button class="diag-tab active" data-target="diag-finance"    role="tab" aria-selected="true"  data-i18n="diag_tab_1">Finance &amp; Control</button>
+                    <button class="diag-tab"         data-target="diag-sales"     role="tab" aria-selected="false" data-i18n="diag_tab_2">Sales &amp; Revenue</button>
+                    <button class="diag-tab"         data-target="diag-governance" role="tab" aria-selected="false" data-i18n="diag_tab_3">Governance</button>
+                    <button class="diag-tab"         data-target="diag-hr"        role="tab" aria-selected="false" data-i18n="diag_tab_4">People &amp; HR</button>
+                    <button class="diag-tab"         data-target="diag-logistics" role="tab" aria-selected="false" data-i18n="diag_tab_5">Logistics</button>
+                    <button class="diag-tab"         data-target="diag-service"   role="tab" aria-selected="false" data-i18n="diag_tab_6">Service &amp; Ops</button>
+                    <button class="diag-tab"         data-target="diag-customer"  role="tab" aria-selected="false" data-i18n="diag_tab_7">Customer Experience</button>
+                </div>
+
+                <div class="diagnostic-panels">
+
+                    <div class="diag-panel active" id="diag-finance" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_1">Finance &amp; Control</span>
+                                <h3 data-i18n="diag_finance_title">Are your numbers driving decisions — or just documenting the past?</h3>
+                                <p data-i18n="diag_finance_text">Most organisations generate financial reports. Fewer generate financial intelligence. MBS Advisory redesigns your reporting architecture, fortifies budget controls, and deploys executive dashboards that transform finance from a back-office function into your most powerful strategic asset.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_finance_b1">Budget control and cost management frameworks</li>
+                                    <li data-i18n="diag_finance_b2">Real-time executive financial dashboards</li>
+                                    <li data-i18n="diag_finance_b3">Cash flow visibility and variance analysis</li>
+                                    <li data-i18n="diag_finance_b4">SOX, IFRS, and regulatory compliance</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta">Talk to Our Finance Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">–40%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_finance">Reporting cycle reduction</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">2×</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_finance_2">Leadership KPI visibility</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-sales" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_2">Sales &amp; Revenue</span>
+                                <h3 data-i18n="diag_sales_title">Is your pipeline reflecting reality — or wishful thinking?</h3>
+                                <p data-i18n="diag_sales_text">Revenue growth is a management problem before it is a sales problem. MBS Advisory brings structured commercial discipline: rigorous pipeline management, evidence-based forecasting, and the performance routines that make high-performing teams consistently outperform.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_sales_b1">Pipeline accuracy and revenue forecasting</li>
+                                    <li data-i18n="diag_sales_b2">Commercial performance frameworks and routines</li>
+                                    <li data-i18n="diag_sales_b3">Sales team structure and incentive alignment</li>
+                                    <li data-i18n="diag_sales_b4">Win/loss analysis and conversion improvement</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_sales">Talk to Our Sales Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">+28%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_sales">Revenue improvement</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">3×</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_sales_2">Pipeline visibility</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-governance" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_3">Governance</span>
+                                <h3 data-i18n="diag_gov_title">Can every senior leader answer: who owns this, and what happens next?</h3>
+                                <p data-i18n="diag_gov_text">Ambiguity is expensive. MBS Advisory designs governance frameworks that eliminate confusion, accelerate decision-making, and create accountability across every function. The result: fewer fires, faster execution, and a leadership team that operates with confidence.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_gov_b1">Clear process ownership and RACI design</li>
+                                    <li data-i18n="diag_gov_b2">Decision-making authority and escalation frameworks</li>
+                                    <li data-i18n="diag_gov_b3">Internal controls and compliance architecture</li>
+                                    <li data-i18n="diag_gov_b4">Reporting cadence and governance routines</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_gov">Talk to Our Governance Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">–60%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_gov">Process escalations</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">100%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_gov_2">Process ownership defined</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-hr" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_4">People &amp; HR</span>
+                                <h3 data-i18n="diag_hr_title">Are your people processes enabling high performance — or quietly draining it?</h3>
+                                <p data-i18n="diag_hr_text">The most expensive inefficiency in most businesses is time: absorbed by unclear processes, manual administration, and the friction that slows everything down. MBS Advisory structures people operations so your team focuses on what creates value.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_hr_b1">Performance management design and tracking</li>
+                                    <li data-i18n="diag_hr_b2">Onboarding and role standardisation</li>
+                                    <li data-i18n="diag_hr_b3">People analytics and HR reporting</li>
+                                    <li data-i18n="diag_hr_b4">Workload design and team efficiency</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_hr">Talk to Our People Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">–45%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_hr">Admin time per person</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">+40%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_hr_2">Team productivity</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-logistics" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_5">Logistics</span>
+                                <h3 data-i18n="diag_log_title">Is your supply chain a competitive advantage — or a cost centre you manage reactively?</h3>
+                                <p data-i18n="diag_log_text">Logistics inefficiencies compound quietly and cost disproportionately. MBS Advisory maps your end-to-end flow, surfaces hidden waste, and redesigns your supply chain to deliver speed, cost control, and total visibility — applying Lean principles with operational precision.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_log_b1">End-to-end supply chain mapping and redesign</li>
+                                    <li data-i18n="diag_log_b2">Lead time reduction and cost optimisation</li>
+                                    <li data-i18n="diag_log_b3">Inventory management and flow design</li>
+                                    <li data-i18n="diag_log_b4">Logistics performance KPIs and dashboards</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_log">Talk to Our Operations Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">–22%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_log">Logistics cost</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">–38%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_log_2">Lead time</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-service" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_6">Service &amp; Operations</span>
+                                <h3 data-i18n="diag_svc_title">Are your service operations scalable — or straining under growth?</h3>
+                                <p data-i18n="diag_svc_text">Scaling a business exposes every operational weakness. MBS Advisory redesigns your service delivery model, eliminates the manual work that should not exist, and builds the management systems that make consistent quality possible — at any volume.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_svc_b1">Service delivery model redesign</li>
+                                    <li data-i18n="diag_svc_b2">Workflow automation and digital integration</li>
+                                    <li data-i18n="diag_svc_b3">Operational KPI frameworks and reporting</li>
+                                    <li data-i18n="diag_svc_b4">Standard operating procedures and quality control</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_svc">Talk to Our Operations Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">–50%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_svc">Manual task volume</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">+35%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_svc_2">Delivery speed</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="diag-panel" id="diag-customer" role="tabpanel">
+                        <div class="diag-content">
+                            <div class="diag-text">
+                                <span class="diag-label" data-i18n="diag_tab_7">Customer Experience</span>
+                                <h3 data-i18n="diag_cx_title">Is your customer experience generating loyalty — or churning it quietly?</h3>
+                                <p data-i18n="diag_cx_text">Every touchpoint is either building your brand or eroding it. MBS Advisory maps your customer journey in full, identifies where friction turns into attrition, and redesigns interactions to create the loyalty that drives referrals, retention, and revenue.</p>
+                                <ul class="diag-bullets">
+                                    <li data-i18n="diag_cx_b1">End-to-end customer journey mapping</li>
+                                    <li data-i18n="diag_cx_b2">Friction analysis and touchpoint redesign</li>
+                                    <li data-i18n="diag_cx_b3">NPS, CSAT, and satisfaction framework design</li>
+                                    <li data-i18n="diag_cx_b4">Retention, loyalty, and re-engagement programmes</li>
+                                </ul>
+                                <a href="#contact" class="btn-primary diag-cta" data-i18n="diag_cta_cx">Talk to Our CX Team</a>
+                            </div>
+                            <div class="diag-visual">
+                                <div class="diag-metric-card">
+                                    <span class="metric-value-sm">+52%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_cx">Customer satisfaction</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                                <div class="diag-metric-card accent">
+                                    <span class="metric-value-sm">–30%</span>
+                                    <span class="metric-label-sm" data-i18n="diag_metric_cx_2">Churn rate</span>
+                                    <span class="metric-src" data-i18n="metric_src">From a verified client engagement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ APPROACH ═══════════ -->
+        <section id="approach">
+            <div class="section-heading reveal">
+                <span class="section-tag" data-i18n="approach_tag">OUR METHODOLOGY</span>
+                <h2 class="section-title" data-i18n="approach_title">Four phases. Delivered with precision. Designed to last.</h2>
+            </div>
+
+            <div class="approach-shell">
+                <div class="approach-steps">
+                    <div class="step reveal left">
+                        <span class="step-number">01</span>
+                        <h3 data-i18n="step_1_title">Diagnose</h3>
+                        <p data-i18n="step_1_text">We start by understanding your business in depth — its revenue model, financial structure, operational constraints, and where performance is leaving value behind.</p>
+                    </div>
+                    <div class="step reveal">
+                        <span class="step-number">02</span>
+                        <h3 data-i18n="step_2_title">Prioritise</h3>
+                        <p data-i18n="step_2_text">Not everything needs fixing at once. We identify your highest-value opportunities and build a sequenced plan that creates early wins while developing long-term capability.</p>
+                    </div>
+                    <div class="step reveal left">
+                        <span class="step-number">03</span>
+                        <h3 data-i18n="step_3_title">Implement</h3>
+                        <p data-i18n="step_3_text">We deliver alongside your team — not in isolation. Every solution is designed with adoption in mind, ensuring your people own the result from day one.</p>
+                    </div>
+                    <div class="step reveal">
+                        <span class="step-number">04</span>
+                        <h3 data-i18n="step_4_title">Sustain</h3>
+                        <p data-i18n="step_4_text">We embed the routines, dashboards, and governance structures that make results permanent — so performance gains compound, not fade.</p>
+                    </div>
+                </div>
+
+                <div class="approach-panel reveal right">
+                    <div class="approach-panel-img-wrap">
+                        <img src="./images/Elegant.png" alt="Elegant strategy and serious execution" loading="lazy" width="600" height="280">
+                    </div>
+                    <div class="approach-panel-content">
+                        <span class="section-tag" data-i18n="approach_panel_label">Our Advisory Philosophy</span>
+                        <h3 data-i18n="approach_panel_title">Elegant strategy. Serious execution.</h3>
+                        <p data-i18n="approach_panel_text">MBS Advisory combines senior advisory perspective with hands-on implementation discipline. We do not hand off recommendations — we see them through to operational reality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ WHY MBS ═══════════ -->
+        <section id="insights">
+            <div class="section-heading reveal">
+                <span class="section-tag" data-i18n="insights_tag">THE MBS ADVANTAGE</span>
+                <h2 class="section-title" data-i18n="insights_title">Four reasons senior leaders choose MBS Advisory over a generalist firm</h2>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-box reveal left">
+                    <div class="result-number">01</div>
+                    <h3 data-i18n="result_1_title">A Specialist Team, Not a Solo Consultant</h3>
+                    <p data-i18n="result_1_text">MBS Advisory brings a curated network of specialists across finance, commercial strategy, operations, and technology — giving every client access to the right expertise at every stage of the engagement.</p>
+                </div>
+                <div class="result-box reveal">
+                    <div class="result-number">02</div>
+                    <h3 data-i18n="result_2_title">Commercial Rigour in Every Engagement</h3>
+                    <p data-i18n="result_2_text">We approach every project through a commercial lens — asking not just what is efficient, but what creates measurable value for your customers, your team, and your bottom line.</p>
+                </div>
+                <div class="result-box reveal right">
+                    <div class="result-number">03</div>
+                    <h3 data-i18n="result_3_title">Cross-Functional Integration</h3>
+                    <p data-i18n="result_3_text">We connect the dots between sales, finance, operations, and technology — solving root causes instead of isolated symptoms, and building solutions that hold together under real pressure.</p>
+                </div>
+                <div class="result-box reveal left">
+                    <div class="result-number">04</div>
+                    <h3 data-i18n="result_4_title">Implementation as a Core Commitment</h3>
+                    <p data-i18n="result_4_text">Our mandate does not end at the slide deck. We remain engaged through implementation, ensuring every recommendation becomes a measurable, sustainable operational improvement.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════ CONTACT ═══════════ -->
+        <section id="contact" class="contact-section">
+            <div class="contact-layout">
+                <div class="contact-copy reveal left">
+                    <span class="section-tag" data-i18n="contact_tag">START THE CONVERSATION</span>
+                    <h2 class="section-title" data-i18n="contact_title">Ready to turn ambition into execution?</h2>
+                    <p class="section-description" data-i18n="contact_description">Whether you need to grow revenue, control costs, automate operations, or build better executive visibility — MBS Advisory has the expertise, the team, and the track record to make it happen.</p>
+
+                    <div class="contact-points">
+                        <div class="contact-point">
+                            <span class="cp-icon"><i class="fa-solid fa-check"></i></span>
+                            <span data-i18n="contact_point_1">Specialist teams across finance, commercial, and operations</span>
+                        </div>
+                        <div class="contact-point">
+                            <span class="cp-icon"><i class="fa-solid fa-check"></i></span>
+                            <span data-i18n="contact_point_2">Engagements structured for results, not just recommendations</span>
+                        </div>
+                        <div class="contact-point">
+                            <span class="cp-icon"><i class="fa-solid fa-check"></i></span>
+                            <span data-i18n="contact_point_3">Proven track record with leaders across Europe and the Americas</span>
+                        </div>
+                    </div>
+
+                    <!-- Micro-CTA: lower commitment entry -->
+                    <div class="micro-cta-box">
+                        <div class="micro-cta-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                        <div>
+                            <strong data-i18n="micro_cta_title">Start with a complimentary 30-minute diagnostic</strong>
+                            <p data-i18n="micro_cta_text">No obligation. In 30 minutes, we will identify your single highest-value opportunity.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <a href="https://www.linkedin.com/in/marlonbsiqueira/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@marlonbsiqueira468" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/marlonbcsiqueira@gmail.com" method="POST" class="contact-form reveal right">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New consultation request - MBS Advisory">
+                    <input type="hidden" name="_next" value="https://mbsadvisory.com/#contact">
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="cf-name" data-i18n="form_name_label">Full Name</label>
+                            <input type="text" id="cf-name" name="name" required autocomplete="name" data-i18n-placeholder="form_name" placeholder="Your full name">
+                        </div>
+                        <div class="form-field">
+                            <label for="cf-email" data-i18n="form_email_label">Business Email</label>
+                            <input type="email" id="cf-email" name="email" required autocomplete="email" data-i18n-placeholder="form_email" placeholder="Your business email">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-company" data-i18n="form_company_label">Company</label>
+                        <input type="text" id="cf-company" name="company" data-i18n-placeholder="form_company" placeholder="Your company name">
+                    </div>
+                    <div class="form-field">
+                        <label for="cf-message" data-i18n="form_message_label">Tell Us Your Challenge</label>
+                        <textarea id="cf-message" name="message" rows="5" required data-i18n-placeholder="form_message" placeholder="Describe your current challenge, goal, or the area where you want greater impact"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span data-i18n="form_button">Request Your Consultation</span>
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                    <p class="form-note" data-i18n="form_note">We respond within one business day. All conversations are strictly confidential.</p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-logo">MBS Advisory</span>
+                <p data-i18n="footer_text_1">Specialist Consulting · Revenue · Finance · Operations · Transformation</p>
+            </div>
+            <div class="footer-links">
+                <a href="#results"    data-i18n="nav_results">Results</a>
+                <a href="#expertise"  data-i18n="nav_expertise">Expertise</a>
+                <a href="#diagnostic" data-i18n="nav_diagnostic">Diagnostic</a>
+                <a href="#approach"   data-i18n="nav_approach">Approach</a>
+                <a href="#contact"    data-i18n="nav_contact">Contact</a>
+            </div>
+            <div class="footer-meta">
+                <p data-i18n="footer_text_2">© 2026 MBS Advisory. All rights reserved.</p>
+                <p class="footer-tagline" data-i18n="footer_text_3">Elegant strategy. Serious execution.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
