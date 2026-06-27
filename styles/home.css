@@ -1,0 +1,205 @@
+/* ── MBS Advisory — Hero Section ───────────────────── */
+
+#home {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    align-items: center;
+    gap: clamp(36px, 5vw, 80px);
+    min-height: calc(100vh - 84px);
+    padding-top: 64px;
+    padding-bottom: 80px;
+}
+
+/* ── CTA column ─────────────────────────────────────── */
+#cta {
+    display: flex; flex-direction: column;
+    gap: 28px; max-width: 680px;
+}
+
+/* ── Eyebrow ────────────────────────────────────────── */
+.eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 7px 16px; border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--primary-dim);
+    color: var(--primary);
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 0.7rem; font-weight: 800;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    width: fit-content;
+}
+
+.eyebrow-dot {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #00C2A8;
+    box-shadow: 0 0 10px rgba(0,194,168,0.7);
+    flex-shrink: 0;
+    animation: pulse-dot 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.45; transform: scale(0.68); }
+}
+
+/* ── Hero title ─────────────────────────────────────── */
+#cta .title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: clamp(2.6rem, 4vw, 4.4rem);
+    line-height: 1.02; letter-spacing: -0.03em;
+    font-weight: 700; font-style: italic;
+    color: var(--text); max-width: 14ch; margin: 0;
+}
+
+/* ── Description ────────────────────────────────────── */
+#cta .description {
+    max-width: 580px; font-size: 1.02rem;
+    line-height: 1.88; color: var(--text-2); font-weight: 400;
+}
+
+/* ── Hero actions ───────────────────────────────────── */
+.hero-actions {
+    display: flex; flex-wrap: wrap;
+    gap: 14px; align-items: center;
+}
+
+/* ── Trust items ────────────────────────────────────── */
+.hero-trust { display: flex; flex-direction: column; gap: 10px; }
+
+.trust-item {
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 16px 18px;
+    background: var(--surface);
+    border: 1px solid var(--border-card);
+    border-radius: 14px; box-shadow: var(--shadow-xs);
+}
+
+.trust-item:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-sm);
+    border-color: var(--border);
+}
+
+.trust-icon {
+    width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px;
+    background: var(--primary-dim); border: 1px solid var(--border-light);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--primary); font-size: 0.9rem; margin-top: 1px;
+}
+
+.trust-item strong {
+    display: block; font-size: 0.9rem; font-weight: 700;
+    color: var(--text); margin-bottom: 3px;
+}
+
+.trust-item span {
+    font-size: 0.82rem; color: var(--text-2); line-height: 1.5;
+}
+
+/* ── Banner column ──────────────────────────────────── */
+#banner {
+    position: relative; display: flex;
+    justify-content: center; align-items: center; min-height: 560px;
+}
+
+#banner::before {
+    content: ''; position: absolute; inset: 8% 5%; border-radius: 40px;
+    background: radial-gradient(ellipse, rgba(27,59,255,0.1) 0%, transparent 70%);
+    filter: blur(50px); pointer-events: none; z-index: 0;
+}
+
+/* ── Video frame ────────────────────────────────────── */
+.hero-visual-frame {
+    position: relative; z-index: 1;
+    width: min(100%, 520px); border-radius: 26px; padding: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow-lg);
+}
+
+.hero-video {
+    width: 100%; height: 540px;
+    object-fit: cover; border-radius: 18px; display: block;
+    background: linear-gradient(135deg, var(--blue-050) 0%, var(--blue-100) 100%);
+}
+
+/* ── Floating cards ─────────────────────────────────── */
+.hero-floating-card {
+    position: absolute; z-index: 2;
+    display: flex; align-items: center; gap: 12px;
+    min-width: 216px; padding: 14px 16px; border-radius: 16px;
+    background: var(--surface);
+    border: 1px solid var(--border-card);
+    box-shadow: var(--shadow-md);
+}
+
+.hero-floating-card:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.fc-icon {
+    width: 38px; height: 38px; flex-shrink: 0; border-radius: 10px;
+    background: var(--primary-dim); border: 1px solid var(--border-light);
+    display: inline-flex; align-items: center; justify-content: center;
+    color: var(--primary); font-size: 0.95rem;
+}
+
+.hero-floating-card span {
+    display: block; font-size: 0.68rem; font-weight: 800;
+    letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-3); margin-bottom: 3px;
+}
+
+.hero-floating-card strong {
+    display: block; font-size: 0.9rem; font-weight: 700;
+    color: var(--text); line-height: 1.3;
+}
+
+.card-top    { top: 60px;    right: -18px; }
+.card-bottom { bottom: 60px; left: -18px; }
+
+/* ── Responsive ─────────────────────────────────────── */
+@media (max-width: 1200px) {
+    #home { gap: 44px; }
+    #cta .title { font-size: clamp(2.3rem, 3.8vw, 4rem); }
+    .hero-video { height: 480px; }
+    .card-top  { right: 0; }
+    .card-bottom { left: 0; }
+}
+
+@media (max-width: 1170px) {
+    #home {
+        grid-template-columns: 1fr; text-align: center;
+        min-height: auto; gap: 36px;
+        padding-top: 44px; padding-bottom: 56px;
+    }
+    #cta { align-items: center; max-width: 740px; margin: 0 auto; }
+    #cta .title { max-width: 13ch; font-size: clamp(2.2rem, 7vw, 3.6rem); }
+    #cta .description { text-align: center; }
+    .hero-actions { justify-content: center; }
+    .eyebrow { align-self: center; }
+    .hero-trust { width: 100%; max-width: 520px; align-self: center; text-align: left; }
+    #banner { order: -1; min-height: auto; flex-direction: column; align-items: center; gap: 0; }
+    .hero-visual-frame { max-width: 460px; }
+    .hero-video { height: 440px; }
+    .hero-floating-card { position: static; margin-top: 10px; }
+    .card-top, .card-bottom { position: static; }
+}
+
+@media (max-width: 768px) {
+    #home { gap: 28px; padding-top: 32px; padding-bottom: 44px; }
+    #cta .title { font-size: clamp(2rem, 9vw, 3rem); max-width: 100%; }
+    #cta .description { font-size: 0.97rem; }
+    .hero-visual-frame { padding: 8px; border-radius: 20px; }
+    .hero-video { height: 360px; border-radius: 14px; }
+    .hero-floating-card { width: 100%; min-width: 0; text-align: left; }
+}
+
+@media (max-width: 480px) {
+    #cta .title { font-size: 2.05rem; }
+    .hero-actions { flex-direction: column; align-items: stretch; width: 100%; }
+    .hero-actions .btn-primary,
+    .hero-actions .btn-ghost { width: 100%; justify-content: center; }
+    .hero-video { height: 280px; }
+}
